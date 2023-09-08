@@ -1,0 +1,33 @@
+commitMessage: "ci(release): Version bump to $VERSION [skip ci]"
+
+bumps:
+  - file: package.json
+    json:
+      - path: "version"
+        semver: true
+
+# Changelog defaults
+changelog:
+  # Change the sort order of the commits within each changelog entry.
+  # Supported values are asc or desc (case is ignored)
+  #
+  # Defaults to desc (descending order) to mirror the default behaviour
+  # of "git log"
+  sort: asc
+
+  # A list of commits to exclude during the creation of a changelog.
+  # Provide a list of regular expressions for matching commits that
+  # are to be excluded. Auto-generated commits from Uplift
+  # (with the prefix ci(uplift)) will always be excluded
+  #
+  # Defaults to an empty list. All commits are included
+  exclude:
+    - '^chore\(deps\)'
+    - ^docs
+    - ^ci
+
+  # A list of commits to cherry-pick and include during the creation
+  # of a changelog. Provide a list of regular expressions for matching
+  # commits that are to be included
+  # include:
+  # - '^.*\(scope\)'
