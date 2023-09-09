@@ -3,6 +3,24 @@ import react from '@vitejs/plugin-react-swc'
 import path from 'path';
 // Aliasing Source: https://dev.to/tilly/aliasing-in-vite-w-typescript-1lfo
 
+module.exports = {
+  // ... other configuration options
+  module: {
+    rules: [
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+            },
+          },
+        ],
+      },
+    ],
+  },
+};
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -19,5 +37,5 @@ export default defineConfig({
   },
   define: {
     APP_VERSION: JSON.stringify(process.env.npm_package_version)
-  }
+  },
 })

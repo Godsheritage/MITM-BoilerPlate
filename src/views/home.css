@@ -1,0 +1,46 @@
+/* home section  */
+
+.home-content{
+    display: "flex"; 
+    flex-direction: "row";
+    background-color: "white";
+    justify-content: space-evenly;
+}
+
+.background-img{
+    background-image: url("../home.gif");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40rem;
+    width: 100%;
+    max-width: 50rem;
+}
+
+
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    margin-left: 10rem;
+}
+.home-body{
+    margin-top: -40px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color:white;
+}
+
+.home-btns{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+.title{
+    font-size: 4rem;
+    color: white;
+    font-weight: 600;
+
+}

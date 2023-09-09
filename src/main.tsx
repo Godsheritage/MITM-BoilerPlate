@@ -1,11 +1,13 @@
 import "./index.css";
+import App from "./App";
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { router } from "@/utils/router";
-import { RouterProvider } from "@tanstack/router";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <Router>
+      <App />
+    </Router>
   </React.StrictMode>
 );
