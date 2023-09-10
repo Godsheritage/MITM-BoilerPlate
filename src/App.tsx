@@ -1,7 +1,8 @@
 import { theme } from "antd";
 import Home from "./views/Home.tsx";
 import Header from "./components/Header.tsx";
-import Footer from "./components/Footer.tsx";
+import FooterComponent from "./components/footer.tsx";
+// import Footer from "./components/Footer.tsx";
 import Education from "./views/Education.tsx";
 import FormView from "./views/FormView.tsx";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -19,7 +20,7 @@ const App: React.FC = () => {
         <Route path="/education" element={<Education />} />
         <Route path="/form" element={<FormView />} />
       </Routes>
-      <Footer />
+      <FooterComponent />
     </>
   );
 };

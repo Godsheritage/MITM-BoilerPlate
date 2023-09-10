@@ -1,5 +1,5 @@
 import { Breadcrumb, Layout } from "antd";
-import Chat from "../utils/Chat"
+import Chat from "../utils/ChatBot"
 
 const { Footer } = Layout;
 

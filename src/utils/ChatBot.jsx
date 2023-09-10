@@ -20,7 +20,7 @@ const systemMessage = {
     "Explain things like you're talking to a software professional with 2 years of experience.",
 };
 
-const Chat = () => {
+const ChatBot = () => {
   const [messages, setMessages] = useState([
     {
       message: "Hello, I'm your Roofe Assistant! Ask me anything!",
@@ -137,4 +137,4 @@ const Chat = () => {
   );
 }
 
-export default Chat;
+export default ChatBot;
