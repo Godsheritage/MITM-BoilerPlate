@@ -20,15 +20,15 @@
     "noFallthroughCasesInSwitch": true,
 
     /* Path Aliases */
-    "baseUrl": ".", // Sets the relative path base
-    "paths": {
-      "@/*": ["src/*"],
-      "@components/*": ["src/components/*"],
-      "@views/*": ["src/views/*"],
-      "@util/*": ["src/utils/*"],
-      "@styles/*": ["src/styles/*"],
-      "@assets/*": ["src/assets/*"]
-    }
+    // "baseUrl": ".", // Sets the relative path base
+    // "paths": {
+    //   "@/*": ["src/*"],
+    //   "@components/*": ["src/components/*"],
+    //   "@views/*": ["src/views/*"],
+    //   "@util/*": ["src/utils/*"],
+    //   "@styles/*": ["src/styles/*"],
+    //   "@assets/*": ["src/assets/*"]
+    // }
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
