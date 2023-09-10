@@ -4,7 +4,7 @@ import Header from "./components/Header.tsx";
 import FooterComponent from "./components/Footer.tsx";
 import Education from "./views/Education.tsx";
 import FormView from "./views/FormView.tsx";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Routes, Route } from "react-router-dom";
 
 
 
