@@ -30,18 +30,20 @@ const Home: React.FC = () => {
               Building Generational Wealth one Roofe at a time
             </p>
             <div className="home-btns">
-              <Link to={"/form"}>
+              <Link to={"/houses"}>
                 <Button type="primary" size={"large"}>
                   Home Buyer
                 </Button>
               </Link>
-              <Button
-                type="primary"
-                size={"large"}
-                style={{ backgroundColor: "#E86308" }}
-              >
-                Home Renter
-              </Button>
+              <Link to={"/houses"}>
+                <Button
+                  type="primary"
+                  size={"large"}
+                  style={{ backgroundColor: "#E86308" }}
+                >
+                  Home Renter
+                </Button>
+              </Link>
             </div>
           </div>
           <div className="background-img"></div>
